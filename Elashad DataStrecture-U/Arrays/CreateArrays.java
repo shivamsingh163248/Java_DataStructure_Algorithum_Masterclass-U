@@ -24,14 +24,9 @@ public class CreateArrays {
 	}
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
-		// TODO Auto-generated method stub
-		System.out.println("shivam singh 23 ");
-=======
-		// Creating the New Arrays 
-		
->>>>>>> a39fba99dac1e9466dec61c9a8f1488b98d26353
 
+		System.out.println("shivam singh 23 ");
+		
 	}
 
 }
