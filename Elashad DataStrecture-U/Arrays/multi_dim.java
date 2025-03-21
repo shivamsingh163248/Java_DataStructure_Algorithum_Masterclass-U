@@ -83,7 +83,12 @@ public class multi_dim {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		multi();
+		 // multi();
+		
+		int[][] shivam = arr_2d() ; 
+		print(shivam);
+		set_values(shivam) ; 
+		print(shivam);
 
 	}
 
