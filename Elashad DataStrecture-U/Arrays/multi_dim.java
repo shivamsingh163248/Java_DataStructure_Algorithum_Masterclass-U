@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class multi_dim {
@@ -85,10 +86,16 @@ public class multi_dim {
 		// TODO Auto-generated method stub
 		 // multi();
 		
+		int[]s = {5,7,5 } ; 
+		System.out.println(Arrays.toString(s));
+		
 		int[][] shivam = arr_2d() ; 
 		print(shivam);
 		set_values(shivam) ; 
 		print(shivam);
+		
+		// creating the arrays and printing in the string formated 
+		
 
 	}
 
