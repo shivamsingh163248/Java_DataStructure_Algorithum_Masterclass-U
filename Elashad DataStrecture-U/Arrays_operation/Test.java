@@ -11,6 +11,9 @@ public class Test {
 		login.insert(10, 2);
 		login.insert(5, 6);
 		
+		System.out.println(login.getArr()[5]);       
+		login.travesing();
+		
 		
 
 	}

@@ -2,7 +2,20 @@ package Arrays_operation;
 
 public class Arrays {
 
+	
+
+//	public void setArr(int[] arr) {
+//		this.arr = arr;
+//	}
+
 	private int[]arr = null  ; 
+	
+	
+	public int[] getArr() {
+		return arr;
+	}
+	
+	
 	// crating the constructor of the arrays instation 
 	public Arrays(int size) {
 		// hear 
@@ -28,12 +41,30 @@ public class Arrays {
 				System.out.println("shell is alrady accoupide ");
 			}
 			
-		} catch (ArrayIndexOutOfBoundsException e) {
+		    } catch (ArrayIndexOutOfBoundsException e) {
 		       System.out.println("out of bond exception ");
 		}
 		
 		
 	}
+	
+	
+	// hear is the return arrys 
+	
+	public  void travesing() {
+		
+		// creating the loop for the traversing 
+		try {
+			for (int i = 0; i < arr.length  ; i++) {
+				System.out.println(arr[i]+" ");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 	
 	
 	
