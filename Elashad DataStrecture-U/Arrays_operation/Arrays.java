@@ -70,18 +70,25 @@ public class Arrays {
 	public 	void linerSearch(int target) {
 		
 		// creating the for loop for the search 
-		for (int i = 0; i < arr.length; i++) {
-			
-			//write a condition 
-			if (arr[i] == target) {
-				System.out.println("print successful");
-			}else {
-				System.out.println("Not found ");
+		try {
+			for (int i = 0; i < arr.length; i++) {
+				
+				//write a condition 
+				if (arr[i] == target) {
+					System.out.println("print successful");
+				}else {
+					System.out.println("Not found ");
+				}
 			}
+			
+		} catch (Exception e) {
+			System.out.println("not found ");
 		}
 	}
 	
 	public int binary_search(int target) {
+		
+	try {
 		
 		int left = 0 ; 
 		int right = arr.length - 1  ; 	
@@ -101,7 +108,43 @@ public class Arrays {
 		}
 		return -1 ; 
 		
+	} catch (Exception e) {
 		
+		System.out.println("found some exception ");
+		return -1 ; 
+	}finally {
+		System.out.println("this is the binnery search algo ");
+	}
+		
+		
+	}
+	
+	// creating the delete function of the array 
+	
+	public void delete(int target) {
+		
+		try {
+			
+			// if element are the present then the delete element other wise delete the element 
+			// creating the while loop
+	      int i = 0 ; 
+	      while (arr.length > i) {
+			
+	    	  if (arr[i] == target) {
+				// delete value
+	    		  arr[i] = Integer.MIN_VALUE ; 
+	    		  System.out.println("deleted successful !");
+	    		  return ; 
+	    		   
+			}
+	    	  i++ ; 
+		}
+	      System.err.println("not found ");
+	      
+		} catch (Exception e) {
+			System.out.println("hear we get some exception ");
+			
+		}
 	}
 	
 	  

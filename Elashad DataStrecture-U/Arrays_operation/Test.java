@@ -14,6 +14,13 @@ public class Test {
 		System.out.println(login.getArr()[5]);       
 		login.travesing();
 		System.out.println(login.binary_search(6));
+		login.delete(7);
+		System.out.println("56");
+		login.delete(6);
+		System.out.println("56");
+		login.delete(5);
+		
+		
 		
 		
 		
