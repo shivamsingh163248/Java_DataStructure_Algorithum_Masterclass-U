@@ -49,7 +49,7 @@ public class Arrays {
 	}
 	
 	
-	// hear is the return arrys 
+	// hear is the return arrays 
 	
 	public  void travesing() {
 		
@@ -64,6 +64,31 @@ public class Arrays {
 		}
 		
 	}
+	
+	// find the element in the liner and binary search 
+	// find the element in the linear search 
+	public 	void linerSearch(int target) {
+		
+		// creating the for loop for the search 
+		for (int i = 0; i < arr.length; i++) {
+			
+			//write a condition 
+			if (arr[i] == target) {
+				System.out.println("print successful");
+			}else {
+				System.out.println("Not found ");
+			}
+		}
+	}
+	
+	public void binary_search(int target) {
+		
+		
+	}
+	
+	  
+	
+	 
 	
 	
 	

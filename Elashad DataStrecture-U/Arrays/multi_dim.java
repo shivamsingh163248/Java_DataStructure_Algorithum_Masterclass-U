@@ -87,7 +87,7 @@ public class multi_dim {
 		 // multi();
 		
 		int[]s = {5,7,5 } ; 
-		System.out.println(Arrays.toString(s));
+		System.out.println(Arrays.toString(s)); 
 		
 		int[][] shivam = arr_2d() ; 
 		print(shivam);
@@ -96,7 +96,7 @@ public class multi_dim {
 		
 		// creating the arrays and printing in the string formated 
 		
-
+         
 	}
 
 }
