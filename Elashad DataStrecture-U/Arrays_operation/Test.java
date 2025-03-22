@@ -13,6 +13,9 @@ public class Test {
 		
 		System.out.println(login.getArr()[5]);       
 		login.travesing();
+		System.out.println(login.binary_search(6));
+		
+		
 		
 		
 

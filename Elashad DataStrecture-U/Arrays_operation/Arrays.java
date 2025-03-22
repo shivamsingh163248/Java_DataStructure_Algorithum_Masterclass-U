@@ -81,7 +81,25 @@ public class Arrays {
 		}
 	}
 	
-	public void binary_search(int target) {
+	public int binary_search(int target) {
+		
+		int left = 0 ; 
+		int right = arr.length - 1  ; 	
+		// creating the mid 
+		int mid ; 
+		while (left <= right) {
+		 mid = left + ( right - left ) /2 ; 
+			// creating the condition 
+		 System.out.println("mid "+ mid); 
+			if ( arr[mid] == target ) {
+				return 0 ;  	
+			}else if(arr[mid] < target ){
+				left = mid+1 ; 
+			}else {
+				right = mid - 1  ; 
+			}
+		}
+		return -1 ; 
 		
 		
 	}
