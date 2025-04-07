@@ -27,7 +27,14 @@ public class Arrays_Integer {
 	// now insurt the value in the 2d arrays 
 	public  void insurt_values(int row , int coloum , int values  ) {
 		 // time complexity is the big 1 
-		arr[row][coloum] = values ; 
+		try {
+			arr[row][coloum] = values ;
+			
+		} catch (Exception e) {
+			
+			System.out.println("invaid index ");
+		}
+		 
 	}
 	
 	// creating the 2d arrays iterating 
@@ -102,9 +109,51 @@ public class Arrays_Integer {
 	
 	// creating the multiplication 
 	
-	public void Matrix_multiplication(int[][]arr1) {
+	public int[][] Matrix_multiplication(int[][]arr1) {
 		// check matrix multiplication possible or not 
 		// step 1 to check the self matrix 
+		if (!check_dimesion_samearrays(arr1) || !check_dimesion_samearrays(arr)) {
+			System.err.println("matrix multiplication is not possible in the jaccked arrays ");
+			return  null; 
+		}
+		
+		// now check the matrix rule and return the new matrix which is the output by the matrix rule 
+		if (arr[0].length == arr1.length) {
+			
+			// creating the new arrys 
+			int[][]new_2d_arr = new int[arr.length][arr1[0].length] ; 
+			
+			// now creating the loop and dome the multiplication 
+			int k = 0 ; 
+			while (arr1[0].length > k) {
+				
+		
+			for (int i = 0; i < arr.length; i++) {
+				int sum = 0 ; 
+				for (int j = 0; j < arr[0].length; j++) {
+				sum += 	arr[i][j] * arr1[j][k] ; 
+					
+					
+				}
+				
+				// now stored new arrays 
+				new_2d_arr[i][k] = sum ; 
+				
+				
+			}
+			k++ ; 
+			}
+			
+			return new_2d_arr ; 
+			
+		}else {
+			 
+			System.out.println("multiplication is not possible ");
+			return null ;
+		}
+		
+		
+		
 		
 	}
 		
